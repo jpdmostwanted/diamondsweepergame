@@ -3,97 +3,44 @@
     <title>Quintype App</title>
     <link rel="stylesheet" href="/assets/style.css" type="text/css"/>
     <script type="text/javascript" src="/assets/app.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div id="container">
-      <div>
-        <div class="messages"></div>
-        <table class="diamondsweeper-board">
-          <tbody>
-            <tr>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell diamond"></div></td>
-              <td><div class="cell unknown"></div></td>
-            </tr>
-            <tr>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
-            </tr>
-            <tr>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell diamond"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-            </tr>
-            <tr>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-            </tr>
-            <tr>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell diamond"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell arrow"></div></td>
-              <td><div class="cell unknown"></div></td>
-            </tr>
-            <tr>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-            </tr>
-            <tr>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell diamond"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-            </tr>
-            <tr>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
-            </tr>
-          </tbody>
-        </table>
+      <div id="gameboard">
       </div>
     </div>
+    <div class="modal-sm fade" id="winner" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button class="close" data-dismiss="modal" type="button">
+                      ×
+                  </button>
+                  <h1 class="modal-title">
+                      Winner!!!!
+                  </h1>
+              </div>
+              <div class="modal-body">
+                  <p>
+                      Your Score is :
+                      <strong>
+                          <span id="winScore">
+                          </span>
+                      </strong>
+                  </p>
+              </div>
+              <div class="modal-footer">
+                  <button class="btn btn-success" data-dismiss="modal" id="start-new-game" type="button">
+                      Start New Game
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
     <script type="text/javascript">startApp(document.getElementById("container"));</script>
   </body>
 </html>
