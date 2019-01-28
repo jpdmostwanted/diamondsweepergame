@@ -4,11 +4,11 @@ diamond sweeper game
 Bonus section : work in progress
 Not supported as of now.
 
-(UI) - Improve the board to semantic html. The default HTML provided uses tables.
-(Javascript) - Support the ability to save your progress, and load your last save.
-(Javascript) - Cover logic in your application with meaningful tests
-(Infra) - Get hot reloading working
-(Infra) - Get asset pipelining and minification working
+1. (UI) - Improve the board to semantic html. The default HTML provided uses tables.
+3. (Javascript) - Support the ability to save your progress, and load your last save.
+3. (Javascript) - Cover logic in your application with meaningful tests
+4. (Infra) - Get hot reloading working
+5. (Infra) - Get asset pipelining and minification working
 
 
 
